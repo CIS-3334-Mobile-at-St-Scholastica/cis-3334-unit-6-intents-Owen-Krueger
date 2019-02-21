@@ -83,8 +83,8 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 // Do something in response to button click
                 addCalendarEvent(1, "Twin Ports Choral Project-All Things New" ,
-                        "Mitchell Auditorium", new GregorianCalendar(2019,2,22,19,30),
-                        new GregorianCalendar(2019,2,22,21,30));
+                        "Mitchell Auditorium", new GregorianCalendar(2019,1,22,19,30),
+                        new GregorianCalendar(2019,1,22,21,30));
 
             }
         });
@@ -94,8 +94,8 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 // Do something in response to button click
                 addCalendarEvent(2, "Health, Wholeness, and Humanity: The Stewardship of Creation as if Matter Matters" ,
-                        "Burns Wellness Center 249", new GregorianCalendar(2019,2,26,19,30),
-                        new GregorianCalendar(2019,2,26,20,30));
+                        "Burns Wellness Center 249", new GregorianCalendar(2019,1,26,19,30),
+                        new GregorianCalendar(2019,1,26,20,30));
 
             }
         });
@@ -105,8 +105,8 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 // Do something in response to button click
                 addCalendarEvent(3, "The Francis X. Shea Memorial Lecture Presents Poet Jane Hirshfield" ,
-                        "Mitchell Auditorium", new GregorianCalendar(2019,3,5,19,30),
-                        new GregorianCalendar(2019,3,5,20,30));
+                        "Mitchell Auditorium", new GregorianCalendar(2019,2,5,19,30),
+                        new GregorianCalendar(2019,2,5,20,30));
 
             }
         });
