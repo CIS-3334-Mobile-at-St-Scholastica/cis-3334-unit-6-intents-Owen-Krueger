@@ -34,14 +34,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                app:srcCompat="@mipmap/spotlight1" />
+                app:srcCompat="@mipmap/spotlight2" />
 
             <TextView
                 android:id="@+id/textView1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="SAL Colloquium “The Robot Next Door” \nFriday, February 24, 2017, 3:40 – 4:40 p.m.\nTower Hall 4119" />
+                android:layout_weight="4"
+                android:text="Twin Ports Choral Project-All Things New \nFriday, February 22, 2019, 7:30 – 9:30 p.m.\nMitchell Auditorium" />
         </LinearLayout>
 
         <LinearLayout
@@ -88,14 +88,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                app:srcCompat="@mipmap/spotlight1" />
+                app:srcCompat="@mipmap/spotlight3" />
 
             <TextView
                 android:id="@+id/textView2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="SAL Colloquium “The Robot Next Door” \nFriday, February 24, 2017, 3:40 – 4:40 p.m.\nTower Hall 4119" />
+                android:layout_weight="4"
+                android:text="Health, Wholeness, and Humanity: The Stewardship of Creation as if Matter Matters \nTuesday, February 26, 2019, 7:30 – 8:30 p.m.\nBurns Wellness Center 249" />
         </LinearLayout>
 
         <LinearLayout
@@ -142,14 +142,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                app:srcCompat="@mipmap/spotlight1" />
+                app:srcCompat="@mipmap/spotlight4" />
 
             <TextView
                 android:id="@+id/textView3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="SAL Colloquium “The Robot Next Door” \nFriday, February 24, 2017, 3:40 – 4:40 p.m.\nTower Hall 4119" />
+                android:layout_weight="4"
+                android:text="The Francis X. Shea Memorial Lecture Presents Poet Jane Hirshfield\nTuesday, March 5, 2019, 7:30 – 9:30 p.m.\nMitchell Auditorium" />
         </LinearLayout>
 
         <LinearLayout

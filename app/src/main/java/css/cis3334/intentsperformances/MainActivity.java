@@ -1,6 +1,7 @@
 package css.cis3334.intentsperformances;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.provider.CalendarContract;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -39,6 +40,31 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 // Do something in response to button click
                 textViewStatus.setText("Code should display website for performance 1");
+                Uri webpage = Uri.parse("http://www.css.edu/about/spotlight-arts-and-lectures/calendar.html?trumbaEmbed=eventid%3d129826104%26view%3devent%26-childview%3d");
+                Intent webIntent = new Intent(Intent.ACTION_VIEW, webpage);
+                startActivity(webIntent);
+            }
+        });
+
+        btn2Web = (Button) findViewById(R.id.button2WebInfo);
+        btn2Web.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                // Do something in response to button click
+                textViewStatus.setText("Code should display website for performance 2");
+                Uri webpage = Uri.parse("http://www.css.edu/about/spotlight-arts-and-lectures/calendar.html?trumbaEmbed=eventid%3d131034185%26view%3devent%26-childview%3d");
+                Intent webIntent = new Intent(Intent.ACTION_VIEW, webpage);
+                startActivity(webIntent);
+            }
+        });
+
+        btn3Web = (Button) findViewById(R.id.button3WebInfo);
+        btn3Web.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                // Do something in response to button click
+                textViewStatus.setText("Code should display website for performance 2");
+                Uri webpage = Uri.parse("http://www.css.edu/about/spotlight-arts-and-lectures/calendar.html?trumbaEmbed=eventid%3d129951622%26view%3devent%26-childview%3d");
+                Intent webIntent = new Intent(Intent.ACTION_VIEW, webpage);
+                startActivity(webIntent);
             }
         });
 
@@ -50,7 +76,7 @@ public class MainActivity extends AppCompatActivity {
         but1Calendar.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 // Do something in response to button click
-                addCalendarEvent(1, "Twin Ports Chorola Project-All Things New" ,
+                addCalendarEvent(1, "Twin Ports Choral Project-All Things New" ,
                         "Mitchell Auditorium", new GregorianCalendar(2019,2,22,19,30),
                         new GregorianCalendar(2019,2,22,21,30));
 
