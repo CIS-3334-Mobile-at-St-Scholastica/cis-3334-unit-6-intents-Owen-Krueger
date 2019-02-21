@@ -42,7 +42,9 @@ public class MainActivity extends AppCompatActivity {
                 textViewStatus.setText("Code should display website for performance 1");
                 Uri webpage = Uri.parse("http://www.css.edu/about/spotlight-arts-and-lectures/calendar.html?trumbaEmbed=eventid%3d129826104%26view%3devent%26-childview%3d");
                 Intent webIntent = new Intent(Intent.ACTION_VIEW, webpage);
-                startActivity(webIntent);
+                if (webIntent.resolveActivity(getPackageManager()) != null) {
+                    startActivity(webIntent);
+                }
             }
         });
 
@@ -53,7 +55,9 @@ public class MainActivity extends AppCompatActivity {
                 textViewStatus.setText("Code should display website for performance 2");
                 Uri webpage = Uri.parse("http://www.css.edu/about/spotlight-arts-and-lectures/calendar.html?trumbaEmbed=eventid%3d131034185%26view%3devent%26-childview%3d");
                 Intent webIntent = new Intent(Intent.ACTION_VIEW, webpage);
-                startActivity(webIntent);
+                if (webIntent.resolveActivity(getPackageManager()) != null) {
+                    startActivity(webIntent);
+                }
             }
         });
 
@@ -64,7 +68,9 @@ public class MainActivity extends AppCompatActivity {
                 textViewStatus.setText("Code should display website for performance 2");
                 Uri webpage = Uri.parse("http://www.css.edu/about/spotlight-arts-and-lectures/calendar.html?trumbaEmbed=eventid%3d129951622%26view%3devent%26-childview%3d");
                 Intent webIntent = new Intent(Intent.ACTION_VIEW, webpage);
-                startActivity(webIntent);
+                if (webIntent.resolveActivity(getPackageManager()) != null) {
+                    startActivity(webIntent);
+                }
             }
         });
 
@@ -116,7 +122,9 @@ public class MainActivity extends AppCompatActivity {
 
                 Uri location = Uri.parse("geo:0,0?q=1200+Kenwood+Ave,+Duluth,+Minnesota");
                 Intent mapIntent = new Intent(Intent.ACTION_VIEW, location);
-                startActivity(mapIntent);
+                if (mapIntent.resolveActivity(getPackageManager()) != null) {
+                    startActivity(mapIntent);
+                }
             }
         });
 
@@ -128,7 +136,9 @@ public class MainActivity extends AppCompatActivity {
 
                 Uri location = Uri.parse("geo:0,0?q=1200+Kenwood+Ave,+Duluth,+Minnesota");
                 Intent mapIntent = new Intent(Intent.ACTION_VIEW, location);
-                startActivity(mapIntent);
+                if (mapIntent.resolveActivity(getPackageManager()) != null) {
+                    startActivity(mapIntent);
+                }
             }
         });
 
@@ -140,7 +150,9 @@ public class MainActivity extends AppCompatActivity {
 
                 Uri location = Uri.parse("geo:0,0?q=1200+Kenwood+Ave,+Duluth,+Minnesota");
                 Intent mapIntent = new Intent(Intent.ACTION_VIEW, location);
-                startActivity(mapIntent);
+                if (mapIntent.resolveActivity(getPackageManager()) != null) {
+                    startActivity(mapIntent);
+                }
             }
         });
 
@@ -159,7 +171,9 @@ public class MainActivity extends AppCompatActivity {
                 begDate.getTimeInMillis());
         calIntent.putExtra(CalendarContract.EXTRA_EVENT_END_TIME,
                 endDate.getTimeInMillis());
-        startActivity(calIntent);
+        if (calIntent.resolveActivity(getPackageManager()) != null) {
+            startActivity(calIntent);
+        }
     }
 
 
